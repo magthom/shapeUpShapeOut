@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shape Up or Shape Out</title>
+  </head>
+
+  <body>
+    <div id='btn-container'>
+      <input type='value' id='rectangle-height' placeholder="Height">
+      <input type='value' id='rectangle-width' placeholder="Width">
+      <button id='create-rectangle-btn'>Go Rectangle!</button>
+      <input type='value' id='square-height' placeholder="Side Length">
+      <button id='create-square-btn'>Go Square!</button>
+      <input type='value' id='circle-radius' placeholder="Radius">
+      <button id='create-circle-btn'>Go Circle!</button>
+      <input type='value' id='triangle-height' placeholder="Height">
+      <button id='create-triangle-btn'>Go Triangle!</button>
+  </div>
+  <div class="flex-container">
+  <div id='canvas-container'></div>
+  <div id='description-container'>
+</div>
+</div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
