@@ -12,6 +12,8 @@ let sqHeight = $("#square-height");
 let cirRadius = $("#circle-radius");
 let triHeight = $("#triangle-height");
 
+//set up alert to check that input value is sufficient for shape
+
 $(recBtn).click (() => {
     if ((recWidth.val() >= 1 && recWidth.val() <= 600) && (recHeight.val() >=  1 && recHeight.val() <= 600)) {
         let rectangle = new Rectangle(recWidth.val(), recHeight.val());
@@ -65,6 +67,7 @@ style() {
     'top': this.y,
     });
 }
+//append shapes to container when drawn
 drawShape() {
     $(this.div).appendTo(canvasContainer);
 }
@@ -79,6 +82,8 @@ describeShape() {
     $(data).append(this.infoText);
     $(descriptionContainer).append(data);
 }
+//append data to Text then container
+
 deleteShape() {
     this.remove();
     $(data).html('');
